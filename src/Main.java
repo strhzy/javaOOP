@@ -4,10 +4,7 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        MedievalCastle mc = new MedievalCastle();
-        MedievalCastle.removeTorgRelations();
-        MedievalCastle.addTorgRelations();
-        MedievalCastle.removeTorgRelations();
+        
     }
 }
 
@@ -107,7 +104,7 @@ class MedievalCastle{
             return;
         }
 
-        _treasury += money;
+        _treasury -= money;
         System.out.println("В казне осталось " + _treasury + " золота");
     }
     
